@@ -13,7 +13,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 
 
-const Login = ({navigation}) => {
+const LoginScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -73,7 +73,7 @@ const Login = ({navigation}) => {
     );
 };
 
-export default Login;
+export default LoginScreen;
 
 const styles = StyleSheet.create({
     container: {

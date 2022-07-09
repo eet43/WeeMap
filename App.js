@@ -14,8 +14,8 @@ const HomeStack = createNativeStackNavigator();
 const LoginStack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
-import Login from './screens/Login';
-import SignUp from "./screens/SignUp";
+import LoginScreen from './screens/LoginScreen';
+import SignUpScreen from "./screens/SignUpScreen";
 
 const HomeStackScreen = ({navigation}) => (
     <HomeStack.Navigator screenOptions={{
@@ -45,10 +45,10 @@ const LoginStackScreen = () => (
             fontWeight: 'bold'
         }
     }}>
-        <LoginStack.Screen name={"LoginScreen"} component={Login} options={{
+        <LoginStack.Screen name={"LoginScreen"} component={LoginScreen} options={{
             headerShown: false
         }}/>
-        <LoginStack.Screen name={"SignUpScreen"} component={SignUp} options={{
+        <LoginStack.Screen name={"SignUpScreen"} component={SignUpScreen} options={{
             headerShown: false
         }}/>
     </LoginStack.Navigator>
@@ -58,7 +58,7 @@ const App = ({navigation}) => {
       <NavigationContainer>
           <Drawer.Navigator drawerContent={props => <DrawContent {...props}/>}>
               <Drawer.Screen name={'Main'} component={HomeStackScreen} options={{headerShown: false}}/>
-              <Drawer.Screen name={'Login'} component={LoginStackScreen} options={{headerShown: false}}/>
+              <Drawer.Screen name={'LoginScreen'} component={LoginStackScreen} options={{headerShown: false}}/>
           </Drawer.Navigator>
       </NavigationContainer>
   );

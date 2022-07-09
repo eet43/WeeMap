@@ -7,7 +7,7 @@ const timeToString = (time) => {
     const date = new Date(time);
     return date.toISOString().split('T')[0];
 };
-const Schedule: React.FC = () => {
+const ScheduleScreen: React.FC = () => {
     const items = {'2021-11-08': [{name: 'IDLE Python 자격증 일정', time: '2021/11/08~2021/11/19'}],
         '2021-11-19': [{name: 'IDLE Python 자격증 일정(당일 시험)', time: '2021/11/08~2021/11/19'}, {name: '캡스톤 디자인2 마감', time: '2021/11/19'}],
         '2021-11-30': [{name: '캡스톤 디자인2 발표회', time: '2021/11/30~2021/11/30'}],
@@ -72,4 +72,4 @@ const Schedule: React.FC = () => {
     );
 };
 
-export default Schedule;
+export default ScheduleScreen;

@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, Image, Animated } from 'react-native';
 import {PinchGestureHandler, State} from 'react-native-gesture-handler';
 import axios from "axios";
 
-const Food = () => {
+const FoodScreen = () => {
     scale = new Animated.Value(1)
 
     onZoomEventFunction = Animated.event(
@@ -50,4 +50,4 @@ const Food = () => {
 }
 
 
-export default Food;
+export default FoodScreen;

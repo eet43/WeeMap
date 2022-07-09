@@ -5,7 +5,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import {isValidNumber} from "react-native-gesture-handler/lib/typescript/web/utils";
 import {TextInputMask} from "react-native-masked-text";
 
-const Post = ({props, navigation}) => {
+const PostScreen = ({props, navigation}) => {
 
     const [id, setId] = useState('');
     const [latitude, setLatitude] = useState(0);
@@ -111,7 +111,7 @@ const Post = ({props, navigation}) => {
         </View>
     );
 }
-export default Post
+export default PostScreen
 
 const styles = StyleSheet.create({
     container: {

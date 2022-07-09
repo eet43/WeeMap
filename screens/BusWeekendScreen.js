@@ -6,7 +6,7 @@ import axios from "axios";
 const CONTENT = {
     tableHead: ['NO', '학교', '역뒤',]
 };
-const BusWeekend = () => {
+const BusWeekendScreen = () => {
     const [Items, setItems] = useState([]);
     useEffect(()=> {
         axios
@@ -51,7 +51,7 @@ const BusWeekend = () => {
     );
 }
 
-export default BusWeekend
+export default BusWeekendScreen
 
 const styles = StyleSheet.create({
     container: { flex: 1, marginTop: 10, backgroundColor: '#fff' },

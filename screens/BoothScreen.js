@@ -23,7 +23,7 @@ const MAX_HEIGHT = 350;
 //     start_date: start,
 //     end_date: end,
 //     booth_explain: explain,
-const Booth = ({route, navigation}) => {
+const BoothScreen = ({route, navigation}) => {
     const [itemData,setItemData] = useState('');
     const [isLoding, setIsLoding] = useState(false);
     const [id, setId] = useState(route.params.record.id);
@@ -77,7 +77,7 @@ const Booth = ({route, navigation}) => {
     );
 };
 
-export default Booth;
+export default BoothScreen;
 
 const styles = StyleSheet.create({
     container: {

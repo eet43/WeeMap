@@ -4,7 +4,7 @@ import {FlatList} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import axios from "axios";
 
-const Board = ({route, navigation}) => {
+const BoardScreen = ({route, navigation}) => {
     const [data, setData] = useState([]);
     const [isLoding, setIsLoding] = useState(false);
     const [id, setId] = useState(route.params.record.building_num);
@@ -93,4 +93,4 @@ const style = StyleSheet.create({
     },
 });
 
-export default Board;
+export default BoardScreen;

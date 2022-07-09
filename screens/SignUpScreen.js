@@ -12,7 +12,7 @@ import {
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import axios from "axios";
 
-const SignUp = ({navigation}) => {
+const SignUpScreen = ({navigation}) => {
     const [id, setId] = useState(0);
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
@@ -119,7 +119,7 @@ const SignUp = ({navigation}) => {
     );
 };
 
-export default SignUp;
+export default SignUpScreen;
 
 const styles = StyleSheet.create({
     container: {

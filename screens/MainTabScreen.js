@@ -12,19 +12,19 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
 import HomeScreen from "./HomeScreen";
-import BusTabScreen from "./BusTabScreen";
-import FoodTabScreen from "./FoodTabScreen";
-import Schedule from "./Schedule"
-import Post from "./Post";
-import Board from './Board';
-import Booth from './Booth';
+import BusTab from "./BusTab";
+import FoodTab from "./FoodTab";
+import ScheduleScreen from "./ScheduleScreen"
+import PostScreen from "./PostScreen";
+import BoardScreen from './BoardScreen.js';
+import BoothScreen from './BoothScreen';
 
 const Tab = createBottomTabNavigator();
 const MainStack = createNativeStackNavigator();
 const MainStackScreen = () => (
     <MainStack.Navigator>
         <MainStack.Screen name={'Home'} component={HomeScreen} options={{headerShown:false}}/>
-        <MainStack.Screen name={'Board'} component={Board} options={({route}) => ({
+        <MainStack.Screen name={'BoardScreen'} component={BoardScreen} options={({route}) => ({
             // title: route.params.record.building_name,
             // headerStyle: {
             //     backgroundColor: '#fff'
@@ -35,10 +35,10 @@ const MainStackScreen = () => (
             // }
             headerShown: false
         })}/>
-        <MainStack.Screen name={'Booth'} component={Booth} options={({route}) => ({
+        <MainStack.Screen name={'BoothScreen'} component={BoothScreen} options={({route}) => ({
             headerShown: false
         })}/>
-        <MainStack.Screen name={'Post'} component={Post} options={{headerShown:false}}/>
+        <MainStack.Screen name={'PostScreen'} component={PostScreen} options={{headerShown:false}}/>
     </MainStack.Navigator>
 )
 
@@ -73,7 +73,7 @@ const MainTabScreen = () => {
             />
             <Tab.Screen
                 name="Bus"
-                component={BusTabScreen}
+                component={BusTab}
                 options={{
                     headerShown: false,
                     tabBarLabel: '셔틀',
@@ -86,7 +86,7 @@ const MainTabScreen = () => {
             />
             <Tab.Screen
                 name="Food"
-                component={FoodTabScreen}
+                component={FoodTab}
                 options={{
                     headerShown: false,
                     tabBarLabel: '학식',
@@ -99,7 +99,7 @@ const MainTabScreen = () => {
             />
             <Tab.Screen
                 name="Schedule"
-                component={Schedule}
+                component={ScheduleScreen}
                 options={{
                     headerShown: false,
                     tabBarLabel: '일정',
