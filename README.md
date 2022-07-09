@@ -26,6 +26,5 @@
 김대희 – [github 프로필](https://github.com/eet43) – 1998opening@gmail.com <br>
 박찬호 – [github 프로필](https://github.com/Chanopark) – koc081900@gmail.com
 
-MIT license를 준수합니다. ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.
 
 [wiki]: https://github.com/eet43/WeeMap/wiki
